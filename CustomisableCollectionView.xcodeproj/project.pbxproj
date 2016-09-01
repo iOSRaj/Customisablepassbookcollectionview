@@ -17,6 +17,7 @@
 		1B30A1EC1D787C4B00CEB488 /* CardStackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B30A1E81D787C4B00CEB488 /* CardStackCell.swift */; };
 		1B30A1ED1D787C4B00CEB488 /* CardStackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B30A1E91D787C4B00CEB488 /* CardStackCell.xib */; };
 		1B30A1EF1D7885E400CEB488 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B30A1EE1D7885E400CEB488 /* CollectionViewController.swift */; };
+		1B30A1F21D78D4AB00CEB488 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 1B30A1F11D78D4AB00CEB488 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		1B30A1E81D787C4B00CEB488 /* CardStackCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardStackCell.swift; sourceTree = "<group>"; };
 		1B30A1E91D787C4B00CEB488 /* CardStackCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardStackCell.xib; sourceTree = "<group>"; };
 		1B30A1EE1D7885E400CEB488 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		1B30A1F11D78D4AB00CEB488 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 		1B30A1C81D787C3800CEB488 = {
 			isa = PBXGroup;
 			children = (
+				1B30A1F11D78D4AB00CEB488 /* README.md */,
 				1B30A1D31D787C3800CEB488 /* CustomisableCollectionView */,
 				1B30A1D21D787C3800CEB488 /* Products */,
 			);
@@ -162,6 +165,7 @@
 				1B30A1D71D787C3800CEB488 /* ViewController.swift in Sources */,
 				1B30A1D51D787C3800CEB488 /* AppDelegate.swift in Sources */,
 				1B30A1EB1D787C4B00CEB488 /* CardStackLayout.swift in Sources */,
+				1B30A1F21D78D4AB00CEB488 /* README.md in Sources */,
 				1B30A1EC1D787C4B00CEB488 /* CardStackCell.swift in Sources */,
 				1B30A1EA1D787C4B00CEB488 /* CardStackController.swift in Sources */,
 				1B30A1EF1D7885E400CEB488 /* CollectionViewController.swift in Sources */,

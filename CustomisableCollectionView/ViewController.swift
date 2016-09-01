@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  CustomisableCollectionView
 //
-//  Created by tcs on 9/1/16.
+//  Created by Raj on 9/1/16.
 //  Copyright © 2016 Raj. All rights reserved.
 //
 
@@ -19,7 +19,6 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 

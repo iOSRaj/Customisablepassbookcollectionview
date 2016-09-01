@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  CustomisableCollectionView
 //
-//  Created by tcs on 9/1/16.
+//  Created by Raj on 9/1/16.
 //  Copyright © 2016 Raj. All rights reserved.
 //
 
@@ -16,6 +16,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        /// To Use it as root View controller
+//        let layout = CardStackLayout()
+//        layout.actualCellHeight = Double(UIScreen.mainScreen().bounds.height - 120.0)
+//        layout.visibleCellHeight = 60.0
+//        self.window?.rootViewController = CollectionViewController(collectionViewLayout: layout)
+//        
+//        self.window!.makeKeyAndVisible()
+
         return true
     }
 

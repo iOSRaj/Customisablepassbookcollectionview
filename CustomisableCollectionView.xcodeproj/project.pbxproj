@@ -12,6 +12,11 @@
 		1B30A1DA1D787C3800CEB488 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B30A1D81D787C3800CEB488 /* Main.storyboard */; };
 		1B30A1DC1D787C3800CEB488 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B30A1DB1D787C3800CEB488 /* Assets.xcassets */; };
 		1B30A1DF1D787C3800CEB488 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B30A1DD1D787C3800CEB488 /* LaunchScreen.storyboard */; };
+		1B30A1EA1D787C4B00CEB488 /* CardStackController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B30A1E61D787C4B00CEB488 /* CardStackController.swift */; };
+		1B30A1EB1D787C4B00CEB488 /* CardStackLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B30A1E71D787C4B00CEB488 /* CardStackLayout.swift */; };
+		1B30A1EC1D787C4B00CEB488 /* CardStackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B30A1E81D787C4B00CEB488 /* CardStackCell.swift */; };
+		1B30A1ED1D787C4B00CEB488 /* CardStackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B30A1E91D787C4B00CEB488 /* CardStackCell.xib */; };
+		1B30A1EF1D7885E400CEB488 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B30A1EE1D7885E400CEB488 /* CollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		1B30A1DB1D787C3800CEB488 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B30A1DE1D787C3800CEB488 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B30A1E01D787C3800CEB488 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B30A1E61D787C4B00CEB488 /* CardStackController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardStackController.swift; sourceTree = "<group>"; };
+		1B30A1E71D787C4B00CEB488 /* CardStackLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardStackLayout.swift; sourceTree = "<group>"; };
+		1B30A1E81D787C4B00CEB488 /* CardStackCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardStackCell.swift; sourceTree = "<group>"; };
+		1B30A1E91D787C4B00CEB488 /* CardStackCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardStackCell.xib; sourceTree = "<group>"; };
+		1B30A1EE1D7885E400CEB488 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,27 @@
 		1B30A1D31D787C3800CEB488 /* CustomisableCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				1B30A1F01D78879B00CEB488 /* CardStackViewController */,
 				1B30A1D41D787C3800CEB488 /* AppDelegate.swift */,
 				1B30A1D61D787C3800CEB488 /* ViewController.swift */,
 				1B30A1D81D787C3800CEB488 /* Main.storyboard */,
+				1B30A1EE1D7885E400CEB488 /* CollectionViewController.swift */,
 				1B30A1DB1D787C3800CEB488 /* Assets.xcassets */,
 				1B30A1DD1D787C3800CEB488 /* LaunchScreen.storyboard */,
 				1B30A1E01D787C3800CEB488 /* Info.plist */,
 			);
 			path = CustomisableCollectionView;
+			sourceTree = "<group>";
+		};
+		1B30A1F01D78879B00CEB488 /* CardStackViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1B30A1E91D787C4B00CEB488 /* CardStackCell.xib */,
+				1B30A1E61D787C4B00CEB488 /* CardStackController.swift */,
+				1B30A1E71D787C4B00CEB488 /* CardStackLayout.swift */,
+				1B30A1E81D787C4B00CEB488 /* CardStackCell.swift */,
+			);
+			name = CardStackViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +147,7 @@
 			files = (
 				1B30A1DF1D787C3800CEB488 /* LaunchScreen.storyboard in Resources */,
 				1B30A1DC1D787C3800CEB488 /* Assets.xcassets in Resources */,
+				1B30A1ED1D787C4B00CEB488 /* CardStackCell.xib in Resources */,
 				1B30A1DA1D787C3800CEB488 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +161,10 @@
 			files = (
 				1B30A1D71D787C3800CEB488 /* ViewController.swift in Sources */,
 				1B30A1D51D787C3800CEB488 /* AppDelegate.swift in Sources */,
+				1B30A1EB1D787C4B00CEB488 /* CardStackLayout.swift in Sources */,
+				1B30A1EC1D787C4B00CEB488 /* CardStackCell.swift in Sources */,
+				1B30A1EA1D787C4B00CEB488 /* CardStackController.swift in Sources */,
+				1B30A1EF1D7885E400CEB488 /* CollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

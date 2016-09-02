@@ -3,6 +3,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -18,7 +20,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vrr-5Z-WZt">
-                                <rect key="frame" x="134" y="129" width="333" height="342"/>
+                                <rect key="frame" x="93" y="129" width="414" height="342"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="WRV-0W-3ae"/>
+                                    <constraint firstAttribute="height" constant="342" id="WcZ-z1-VEr"/>
+                                </constraints>
                                 <connections>
                                     <segue destination="tgL-s8-4rJ" kind="embed" id="DCi-30-Wkc"/>
                                 </connections>
@@ -26,10 +32,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Vrr-5Z-WZt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="134" id="7aq-v7-Yp3"/>
-                            <constraint firstItem="Vrr-5Z-WZt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MpV-ow-aIR"/>
-                            <constraint firstItem="Vrr-5Z-WZt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="109" id="SvZ-7a-iQn"/>
-                            <constraint firstItem="Vrr-5Z-WZt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eJI-EM-NtM"/>
+                            <constraint firstItem="Vrr-5Z-WZt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerXWithinMargins" id="4jh-Y6-LeU"/>
+                            <constraint firstItem="Vrr-5Z-WZt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerYWithinMargins" id="uDe-pQ-nuc"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -42,7 +46,7 @@
             <objects>
                 <collectionViewController id="tgL-s8-4rJ" customClass="CollectionViewController" customModule="CustomisableCollectionView" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Mz1-dP-WAT">
-                        <rect key="frame" x="0.0" y="0.0" width="333" height="342"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="342"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="mfy-EY-LLR">
                             <size key="itemSize" width="50" height="50"/>

@@ -17,7 +17,12 @@ class CardStackCell: UICollectionViewCell {
     override func awakeFromNib() {
         stackCell.layer.cornerRadius = 10.0
         stackCell.clipsToBounds = true
-        stackCell.backgroundColor = getRandomColor()
+        self.layer.shadowColor = UIColor.blackColor().CGColor
+        self.layer.shadowRadius = 4
+        self.layer.shadowOffset =  CGSize(width: 15.0, height: 15.0)
+        self.layer.shadowOpacity = 0.2
+        let shadowPath: CGPathRef = UIBezierPath(rect: self.stackCell.bounds).CGPath
+        self.layer.shadowPath = shadowPath
     }
 
     override init(frame: CGRect) {

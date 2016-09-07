@@ -17,12 +17,8 @@ class CardStackCell: UICollectionViewCell {
     override func awakeFromNib() {
         stackCell.layer.cornerRadius = 10.0
         stackCell.clipsToBounds = true
-        self.layer.shadowColor = UIColor.blackColor().CGColor
-        self.layer.shadowRadius = 4
-        self.layer.shadowOffset =  CGSize(width: 15.0, height: 15.0)
-        self.layer.shadowOpacity = 0.2
-        let shadowPath: CGPathRef = UIBezierPath(rect: self.stackCell.bounds).CGPath
-        self.layer.shadowPath = shadowPath
+        self.layer.shadowPath = UIBezierPath(rect: self.stackCell.bounds).CGPath
+        self.configureCustomisation()
     }
 
     override init(frame: CGRect) {
@@ -32,16 +28,20 @@ class CardStackCell: UICollectionViewCell {
         cardView.layer.cornerRadius = 10.0
         cardView.clipsToBounds = true
         self.contentView.addSubview(cardView)
-
-        self.layer.shadowColor = UIColor.blackColor().CGColor
-        self.layer.shadowOffset = CGSize(width: 0, height: -2)
-        self.layer.shadowOpacity = 0.5
         self.layer.shadowPath = UIBezierPath(roundedRect: self.bounds, cornerRadius: 10.0).CGPath
-        self.clipsToBounds = false
-
+        self.configureCustomisation()
+    }
+    
+    
+    func configureCustomisation(){
+        self.layer.shadowColor = UIColor.blackColor().CGColor
+        self.layer.shadowRadius = 4
+        self.layer.shadowOffset =  CGSize(width: 15.0, height: 15.0)
+        self.layer.shadowOpacity = 0.2
         let gestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(CardStackCell.panning(_:)))
         self.addGestureRecognizer(gestureRecognizer)
     }
+    
 
     func panning(recognizer: UIPanGestureRecognizer) {
         let translation = recognizer.translationInView(self)

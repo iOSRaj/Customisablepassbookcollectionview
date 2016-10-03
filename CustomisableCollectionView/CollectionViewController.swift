@@ -11,6 +11,10 @@ class CollectionViewController: CardStackController, CardStackControllerDelegate
         self.delegate = self
         cards.append(CardState.Normal.rawValue)
         cards.append(CardState.Normal.rawValue)
+        cards.append(CardState.Normal.rawValue)
+        cards.append(CardState.Normal.rawValue)
+        cards.append(CardState.Normal.rawValue)
+        cards.append(CardState.Normal.rawValue)
     }
     
     // MARK: CardStackControllerDataSource

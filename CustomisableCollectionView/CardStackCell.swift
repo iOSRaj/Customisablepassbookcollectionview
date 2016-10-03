@@ -37,7 +37,8 @@ class CardStackCell: UICollectionViewCell {
         self.layer.shadowColor = UIColor.blackColor().CGColor
         self.layer.shadowRadius = 4
         self.layer.shadowOffset =  CGSize(width: 15.0, height: 15.0)
-        self.layer.shadowOpacity = 0.2
+        self.layer.shadowOpacity = 0.5
+        self.stackCell.backgroundColor = self.getRandomColor()
         let gestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(CardStackCell.panning(_:)))
         self.addGestureRecognizer(gestureRecognizer)
     }

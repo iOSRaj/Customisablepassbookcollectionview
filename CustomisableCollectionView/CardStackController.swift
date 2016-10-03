@@ -34,7 +34,7 @@ class CardStackController: UICollectionViewController, CardStackCellDelegate, Ca
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.collectionView!.backgroundColor = UIColor.whiteColor()
+        self.collectionView!.backgroundColor = UIColor.lightGrayColor()
         let nib = UINib(nibName: "CardStackCell", bundle: nil)
         self.collectionView?.registerNib(nib, forCellWithReuseIdentifier: "CardStackCellIdentifier")
     }
